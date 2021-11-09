@@ -4,6 +4,7 @@
   "description": "",
   "main": "backend/server.js",
   "engines": {
+    "npm": "7.14.0",
     "node": "14.17.3"
   },
   "scripts": {
