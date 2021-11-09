@@ -1,0 +1,168 @@
+.header{
+    width: 100vw;
+    max-width: 100%;
+    background-color: #3b0000a1;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px 0 grey;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.header_logoLink{
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.header_logoLink > h1{
+    font-family: 'Faster One', cursive;
+    font-size: 40px;
+    color: rgb(248, 239, 110);
+    letter-spacing: 1.3px;
+}
+.mbl-home-directory{
+  display: none;
+}
+.searchBox{
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+.searchBox > input[type="text"] {
+  flex: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+    background-color: white;
+    border: none;
+    color: rgba(0, 0, 0, 0.637);
+    padding: 5px 2vmax;
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    font: 300 1.1vmax cursive;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .searchBox > input[type="submit"] {
+    height: 35px;
+    border-radius: 0 5px 5px 0;
+    background-color: tomato;
+    border: none;
+    padding: 5px;
+    font: 300 1.1vmax "Roboto";
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+    font-size: 16px;
+    letter-spacing: 1.3px;
+  }
+
+  .searchBox > input[type="submit"]:hover {
+    background-color: rgb(226, 35, 67);
+  }
+
+  .header_left{
+    display: flex;
+    font-family: 'Roboto', cursive;
+    align-items: center;
+  }
+
+  .header_left_orders{
+    text-decoration: none;
+    margin: 0 5px;
+    margin-right: 15px;
+  }
+
+   .header_left_orders > h1{
+     font-size: 18px;
+     color: whitesmoke;
+     letter-spacing: 1.3px;
+     transition: 0.5s;
+  }
+
+  .header_left_signUp > .signInBtn{
+     border: none;
+     background-image: linear-gradient(rgb(248, 239, 110),tomato);
+     padding: 10px;
+     margin-left: 20px;
+     font-size: 19px;
+     letter-spacing: 1.3px;
+     color: whitesmoke;
+     transition: 0.3s ease-out;
+     text-decoration: none;
+  }
+
+   .header_left_orders > h1:hover{
+      color: rgb(236, 151, 135);
+     
+  }
+
+ .header_left_signUp > .signInBtn:hover{
+    background-color: tomato;
+    cursor: pointer;
+  }
+
+  .speedDial {
+    position: fixed;
+    right: 10px;
+    top: 1px;
+  }
+  
+  .speedDialIcon {
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+  }
+  
+  .authorized_header{
+    display: flex;
+    font-family: 'Roboto', cursive;
+    align-items: center;
+    padding-right: 70px;
+  }
+
+  @media screen and (max-width: 750px){
+    .header_left_orders, .header_left_cart{
+      display: none;
+    }
+    .searchBox > input[type="submit"] {
+      display: none;
+    }
+    .searchBox > input[type="text"] { 
+        border-radius: 5px 5px 5px 5px;   
+      }
+  }
+
+  @media screen and (max-width: 550px){
+ 
+    .logo-home-directory{
+      display: none;
+  }
+  .mbl-home-directory{
+    display: initial;
+  }
+  .searchBox{
+    margin: 10px;
+    margin-left: 0;
+}
+.speedDial {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+.searchBox{
+  width: 70%;
+}
+.searchBox > input[type="text"] {
+  width: 70%;
+  }
+
+  .header_left_signUp > .signInBtn{
+    margin: 0;
+    font-size: 15px;
+    padding: 8px 2px;
+ }
+}

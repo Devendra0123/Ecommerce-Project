@@ -1,0 +1,66 @@
+.productCard {
+
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .productCard > img {
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+    
+  }
+  
+  .productCard > div {
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .productCardSpan {
+    margin: 0.5vmax;
+    font: 600 0.7vmax "Roboto";
+    font-size: 14px;
+  }
+  
+  .productCard > p {
+    font-family: "Roboto";
+    font-size: 17px;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  
+  .productCard > span {
+    margin: 0.5vmax;
+    color: tomato;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  .productCard:hover {
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  
+    transform: translateY(-1vmax);
+  }
+
+  @media screen and (max-width: 300px){
+    .productCard {
+      width: 95%;
+      height: 350px;
+    }
+    .productCard > img {
+    
+      width:100%;
+      
+    }
+  }
