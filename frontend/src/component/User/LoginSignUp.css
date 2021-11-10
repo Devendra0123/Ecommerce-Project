@@ -186,7 +186,7 @@
   
     .loginForm > div > input,
     .signUpForm > div > input {
-      padding: 5px 5vmax;
+      padding: 10px 5vmax;
       font-size: 15px;
     }
   

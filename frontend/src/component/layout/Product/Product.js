@@ -48,16 +48,26 @@ const Products = ({ match }) => {
       alert.error(error);
       dispatch(clearErrors());
     }
-
-    const myForm = {
-      keyword : keyword ? keyword : "",
-      currentPage : currentPage,
-      price : price,
-      ratings : ratings,
-      category : category,
-    }
-    dispatch(fetchProducts(myForm));
-  }, [dispatch, keyword, currentPage, price,ratings, category, alert, error]);
+if(category){
+  const myForm = {
+    keyword : "",
+    currentPage : currentPage,
+    price : price,
+    ratings : ratings,
+    category : category,
+  }
+  dispatch(fetchProducts(myForm));
+}else{
+  const myForm = {
+    keyword : keyword ? keyword : "",
+    currentPage : currentPage,
+    price : price,
+    ratings : ratings,
+    category : category,
+  }
+  dispatch(fetchProducts(myForm));
+}
+ }, [dispatch, keyword, currentPage, price,ratings, category, alert, error]);
 
   return (
     <Fragment>

@@ -8,7 +8,6 @@ import LoginSignUp from "./component/User/LoginSignUp";
 import ProtectedRoute from "./component/Route/ProtectedRoute";
 import Profile from "./component/User/Profile";
 import UpdateProfile from "./component/User/UpdateProfile";
-import {useSelector} from "react-redux";
 import ForgotPassword from "./component/User/ForgotPassword";
 import ResetPassword from "./component/User/ResetPassword";
 import UpdatePassword from "./component/User/UpdatePassword";
