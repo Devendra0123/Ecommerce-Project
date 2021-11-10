@@ -41,7 +41,7 @@
     padding: 5px 2vmax;
     outline: none;
     border-radius: 5px 0px 0px 5px;
-    font: 300 1.1vmax cursive;
+    font-family: cursive;
     height: 35px;
     font-size: 16px;
   }
@@ -87,7 +87,7 @@
      border: none;
      background-image: linear-gradient(rgb(248, 239, 110),tomato);
      padding: 10px;
-     margin-left: 20px;
+     margin-left: 12px;
      font-size: 19px;
      letter-spacing: 1.3px;
      color: whitesmoke;
@@ -115,6 +115,7 @@
     width: 54px;
     height: 54px;
     border-radius: 100%;
+    z-index:10;
   }
   
   .authorized_header{

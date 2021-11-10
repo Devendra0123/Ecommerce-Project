@@ -56,7 +56,7 @@ const {isAuthenticated, user} = useSelector(state => state.userReducer);
              {
                isAuthenticated 
                 ? <UserOptions user={user} /> 
-                : <Link className='signInBtn' to='/login'>Sign In</Link>
+                : <Link className='signInBtn' to='/login'>SignIn</Link>
              }    
              </div>
            </div>
